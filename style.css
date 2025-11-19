@@ -1,13 +1,14 @@
 :root {
-    --square-size: 16 
+    --square-size: 16;
 }
 
 .square {
-    flex: 1 0 calc(100%/var(--square-size));
+    /* use the --cols variable set on the container to compute each cell's basis */
+    flex: 1 0 calc(100% / var(--square-size));
     background-color: white;
     border: 0.2px rgb(0, 0, 0) solid;
     box-sizing: border-box;
-
+    min-width: 0;
 }
 
 .input{

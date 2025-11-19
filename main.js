@@ -19,8 +19,9 @@ for(let i=0; i<gridSize; i++){
     let squares = document.querySelector('.square');
     console.log(gridSize);    
     root.style.setProperty('--square-size', `${Math.sqrt(gridSize)}` );
-    changeColor();
+   
 }
+ changeColor();
 }
 createGrid();
 
